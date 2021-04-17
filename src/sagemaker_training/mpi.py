@@ -226,8 +226,6 @@ class MasterRunner(process.ProcessRunner):
             "btl_vader_single_copy_mechanism",
             "none",
             "-x",
-            "NCCL_MIN_NRINGS=4",
-            "-x",
             "NCCL_SOCKET_IFNAME=%s" % self._network_interface_name,
             "-x",
             "NCCL_DEBUG=%s" % overridden_known_options.NCCL_DEBUG,
