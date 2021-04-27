@@ -152,7 +152,7 @@ class SMDataParallelRunner(process.ProcessRunner):
             "-x",
             "NCCL_DEBUG=%s" % overridden_known_options.NCCL_DEBUG,
             "-x",
-            "LD_LIBRARY_PATH",
+            "LD_LIBRARY_PATH=/opt/amazon/efa/lib:$LD_LIBRARY_PATH",
             "-x",
             "PATH",
             "-x",
